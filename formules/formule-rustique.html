@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formule Rustique</title>
+  <link rel="icon" href="/image/vaisselle.png" type="image/png">
+  <link rel="stylesheet" href="/formule/formule-rustique.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Formule Rustique</h1>
+    <div class="slider-container">
+      <div class="menu">
+              <label for="slider-dot-1"></label>
+              <label for="slider-dot-2"></label>
+              <label for="slider-dot-3"></label>
+      </div>
+    
+              <input class="slide-input" id="slider-dot-3" type="radio" name="slides" checked>
+              <img class="slide-img" src="/image/brownie.jpg">
+    
+              <input class="slide-input" id="slider-dot-2" type="radio" name="slides" checked>
+              <img class="slide-img" src="/image/galette-cusine-rustique-francaise.jpg">
+    
+              <input class="slide-input" id="slider-dot-1" type="radio" name="slides" checked>
+              <img class="slide-img" src="/image/planche-charcuterie.jpeg">
+    
+    </div>
+              <h1>28€</h1>
+              <button class="custom-button" onclick="addToOrder('Formule Rustique', 28)" >Commander </button>
+              
+  </header>
+
+
+  
+    <section>
+    <h2>Entrée : Charcuterie</h2>
+    <p>Ingrédients: Jambon aux noix, saucisson, mortadelle, Chorizo  </p>
+    <h2>Plat : Galette Rustique Française</h2>
+    <p>Ingrédients : Galette, Jambon, Fromage, Oeuf</p>
+    <p>Découvrez l'authenticité de la Bretagne avec une galette dorée et généreusement garnie, un véritable plaisir gourmand qui allie simplicité et saveurs uniques. Une invitation irrésistible à un voyage culinaire !</p>
+    <h2>Dessert : Brownie</h2>
+    <p>Ingrédients : Chocolat noir, chocolat au lait, sucre, farine, sel, Beurre, Oeuf</p>
+    <p>Plongez dans l’intensité d’un brownie fondant et gourmand, où chaque bouchée dévoile un équilibre parfait entre la richesse du chocolat et une douceur irrésistible. Une vraie tentation pour les amoureux du chocolat !</p>
+    </section>
+ 
+    <section>
+    <h2>!Allergènes!</h2>
+    <p>Oeuf, Gluten, Fruits à coques, Lait  </p>
+    </section>
+
+<!-- Panier Section -->
+<div class="section" id="cart-section">
+  <h2>Votre Panier</h2>
+  <div id="cart-list">
+      <p>Votre panier est vide.</p>
+  </div>
+  <button class="actin-button" onclick="validateCart()">Valider les Commandes</button>
+
+  <a class="buttoncuisine" href="../page cuisine/Pcuisisne.html">
+
+      <button class="buttoncuisine2">
+          <span class="label3">admin-section</span>
+          <span class="gradient-container3">
+      </button>
+
+  </a>
+</div>
+
+
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide-input');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      slides[currentIndex].checked = false;
+      currentIndex = (currentIndex + 1) % slides.length;
+      slides[currentIndex].checked = true;
+    }, 5000);
+  });
+</script>
+
+<script src="app-formules.js"></script>
+
+</html>
