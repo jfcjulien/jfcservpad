@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servpad</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!--projet swiper pour le slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+<!--header section-->
+
+<header>
+
+    <img class="logo" src="/images/brand-logo-servpad.png" alt="Servpad">
+
+    <nav class="navbar">
+        <a class="active" href="#acceuil">Acceuil</a>
+        <a href="#bar">Bar</a>
+        <a href="#formules">Formules</a>
+        <a href="#panier">Panier</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+
+    </div>
+</header>
+
+<!--header section end-->
+
+<!--search form-->
+
+<form action="" id="search-form">
+    <input type="search" placeholder="Rechercher ici..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+
+<!--home section starts-->
+
+<section class="home" id="home">
+    <div class="swiper mySwiper home-slider">
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Vos plats à la française</span>
+                    <h3>Cheese cake</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quasi ex suscipit quae.</p>
+                    <a href="#" class="btn">Commander</a>
+                </div>
+                <div class="image">
+                    <img src="/images/top-view-georgian-homemade-round-cheese-cake.jpg" alt="Cheese cake">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Vos plats à la française</span>
+                    <h3>Entrecote au poivre et légumes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quasi ex suscipit quae.</p>
+                    <a href="#" class="btn">Commander</a>
+                </div>
+                <div class="image">
+                    <img src="/images/club-beef-steak-with-pepper-sauce-grilled-vegetables-cutting-board.jpg" alt="Entrecote au poivre et légumes">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Vos plats à la française</span>
+                    <h3>Pâtes en sauces</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quasi ex suscipit quae.</p>
+                    <a href="#" class="btn">Commander</a>
+                </div>
+                <div class="image">
+                    <img src="/images/penne-pasta-with-tomato-sauce-beef-grated-cheese.jpg" alt="Poulet roti">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!--home section end-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--projet swiper pour le slider-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
