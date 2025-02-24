@@ -73,7 +73,7 @@ section {
     display: none;
   }
   
-  /* Affiche l'image correspondante à l'input sélectionné */
+  /* Affiche l'images correspondante à l'input sélectionné */
   #slider-dot-1:checked ~ .slide-img:nth-of-type(3),
   #slider-dot-2:checked ~ .slide-img:nth-of-type(2),
   #slider-dot-3:checked ~ .slide-img:nth-of-type(1) {
@@ -234,7 +234,7 @@ section {
   line-height: 45px;
   border-radius: 20px;
   background-color: #3a3a3a;
-  background-image: linear-gradient(
+  background-images: linear-gradient(
     180deg,
     #3a3a3a 0%,
     #3a3a3a 100%

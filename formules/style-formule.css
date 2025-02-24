@@ -186,7 +186,7 @@ then set the desired styles for .card-img. */
     border-top-right-radius: 80px 50px;
     border: 2px solid black;
     background-color: #228b22;
-    background-image: linear-gradient(to top,transparent 10px,rgba(0,0,0,0.3) 10px,rgba(0,0,0,0.3) 13px,transparent 13px);
+    background-images: linear-gradient(to top,transparent 10px,rgba(0,0,0,0.3) 10px,rgba(0,0,0,0.3) 13px,transparent 13px);
   }
   
   .card-img .img::before {
@@ -199,7 +199,7 @@ then set the desired styles for .card-img. */
     left: 50%;
     bottom: -4px;
     background-repeat: no-repeat;
-    background-image: radial-gradient(ellipse at center,rgba(0,0,0,0.7) 30%,transparent 30%),linear-gradient(to top,transparent 17px,rgba(0,0,0,0.3) 17px,rgba(0,0,0,0.3) 20px,transparent 20px),linear-gradient(to right,black 2px,transparent 2px),linear-gradient(to left,black 2px,transparent 2px),linear-gradient(to top,black 2px,#228b22 2px);
+    background-images: radial-gradient(ellipse at center,rgba(0,0,0,0.7) 30%,transparent 30%),linear-gradient(to top,transparent 17px,rgba(0,0,0,0.3) 17px,rgba(0,0,0,0.3) 20px,transparent 20px),linear-gradient(to right,black 2px,transparent 2px),linear-gradient(to left,black 2px,transparent 2px),linear-gradient(to top,black 2px,#228b22 2px);
     background-size: 60% 10%,100% 100%,100% 65%,100% 65%,100% 50%;
     background-position: center 3px,center bottom,center bottom,center bottom,center bottom;
     border-radius: 0 0 4px 4px;
@@ -217,7 +217,7 @@ then set the desired styles for .card-img. */
     left: 50%;
     top: -13px;
     background-repeat: no-repeat;
-    background-image: linear-gradient(80deg,#ffc0cb 45%,transparent 45%),linear-gradient(-175deg,#ffc0cb 45%,transparent 45%),linear-gradient(80deg,rgba(0,0,0,0.2) 51%,rgba(0,0,0,0) 51%),linear-gradient(-175deg,rgba(0,0,0,0.2) 51%,rgba(0,0,0,0) 51%),radial-gradient(circle at center,#ffa6b6 45%,rgba(0,0,0,0.2) 45%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(45deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(65deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(22deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 54%,rgba(0,0,0,0) 54%);
+    background-images: linear-gradient(80deg,#ffc0cb 45%,transparent 45%),linear-gradient(-175deg,#ffc0cb 45%,transparent 45%),linear-gradient(80deg,rgba(0,0,0,0.2) 51%,rgba(0,0,0,0) 51%),linear-gradient(-175deg,rgba(0,0,0,0.2) 51%,rgba(0,0,0,0) 51%),radial-gradient(circle at center,#ffa6b6 45%,rgba(0,0,0,0.2) 45%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(45deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(65deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(22deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 54%,rgba(0,0,0,0) 54%);
     background-size: 100% 100%,100% 100%,100% 100%,100% 100%,100% 100%,100% 75%,100% 95%,100% 60%;
     background-position: center center;
     border-top-left-radius: 120px;
@@ -309,25 +309,25 @@ then set the desired styles for .card-img. */
   
   .card-img-content {
     width: 150px; 
-    max-width: 100%; /* L'image s'adapte à la largeur de la carte */
+    max-width: 100%; /* L'images s'adapte à la largeur de la carte */
     max-height: 100%;
-    object-fit: cover; /* Maintient les proportions de l'image */
+    object-fit: cover; /* Maintient les proportions de l'images */
     border-radius: 5px; /* Facultatif : arrondir les coins */
   }
 
   .card-img-specific {
     width: 150px; 
-    max-width: 75%; /* L'image s'adapte à la largeur de la carte */
+    max-width: 75%; /* L'images s'adapte à la largeur de la carte */
     max-height: 75%;
-    object-fit: cover; /* Maintient les proportions de l'image */
+    object-fit: cover; /* Maintient les proportions de l'images */
     border-radius: 5px; /* Facultatif : arrondir les coins */
   }
 
   .card-img-specific1 {
     width: 140px; 
-    max-width: 80%; /* L'image s'adapte à la largeur de la carte */
+    max-width: 80%; /* L'images s'adapte à la largeur de la carte */
     max-height: 50%;
-    object-fit: cover; /* Maintient les proportions de l'image */
+    object-fit: cover; /* Maintient les proportions de l'images */
     border-radius: 5px; /* Facultatif : arrondir les coins */
     margin-top: 50px;
   }
@@ -406,7 +406,7 @@ then set the desired styles for .card-img. */
   line-height: 45px;
   border-radius: 22px;
   background-color: rgba(43, 43, 43, 1);
-  background-image: linear-gradient(
+  background-images: linear-gradient(
     180deg,
     rgb(43, 43, 43) 0%,
     rgb(43, 43, 43) 100%
