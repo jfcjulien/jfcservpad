@@ -223,12 +223,6 @@ header .icons #menu-bars{
         padding: 2rem;
     }
 
-    .slide{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }    
-
 }
 
 @media (max-width:768px){
@@ -290,6 +284,7 @@ header .icons #menu-bars{
 .home .home-slider .slide{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
     padding-top: 9rem;
