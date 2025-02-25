@@ -241,6 +241,11 @@ header .icons #menu-bars{
 
 @media (max-width:768px){
 
+    html{
+        font-size: 50%;
+
+    }
+
     header .icons #menu-bars{
         display: inline-block;
     }
@@ -272,7 +277,7 @@ header .icons #menu-bars{
 @media (max-width:520px){
 
     html{
-        font-size: 30%;
+        font-size: 40%;
     }
 
     section{
@@ -298,7 +303,7 @@ header .icons #menu-bars{
     }
 
     section{
-        padding: 30rem 9%;
+        padding: 40rem 9%;
     
     }
 
@@ -418,10 +423,30 @@ header .icons #menu-bars{
 }
 
 .boximage{
-    width: 25rem;
-    height: 25rem;
+    width: 17rem;
+    height: 17rem;
     object-fit: cover;
     border-radius: 30px;
     display: block;
     margin: auto;
+}
+
+.entrees .box-container .box h3{
+    color: #3a3a3a;
+    font-size: 2.5rem;
+}
+
+.entrees .box-container .box .stars{
+    color: #b4dfe5;
+    font-size: 1.5rem;
+}
+
+.entrees .box-container .box i{
+    font-size: 1.7rem;
+}
+
+.entrees .box-container .box span{
+    color: #3a3a3a;
+    font-size: 1.8rem;
+    margin-right: 1rem;
 }
