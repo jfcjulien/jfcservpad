@@ -375,21 +375,23 @@ header .icons #menu-bars{
 .entrees .box-container .box .fa-heart,
 .entrees .box-container .box .fa-eye{
     position: absolute;
-    top: 1.5rem;
     background: #eee;
+    margin-top: -1.5rem;
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
     color: #3a3a3a;
+    text-align: center;
+
 }
 .entrees .box-container .box .fa-heart{
-    right: 1.5rem;
+    left: 1rem;
 }
 
 .entrees .box-container .box .fa-eye{
-    right: 1.5rem;
+    right: 1rem;
 }
 
 .boximage{
