@@ -399,4 +399,6 @@ header .icons #menu-bars{
     height: 30rem;
     object-fit: cover;
     border-radius: 30px;
+    display: block;
+    margin: auto;
 }
