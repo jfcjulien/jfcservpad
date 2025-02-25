@@ -31,7 +31,21 @@ section{
 
 section:nth-child(even){
     background: #eee;
+}
 
+.sub-heading{
+    text-align: center;
+    color: #b4dfe5;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 3rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
 }
 
 .btn{
@@ -338,4 +352,50 @@ header .icons #menu-bars{
     font-size: 2.2rem;
     padding: .5rem 0;
     line-height: 1.5rem;
+}
+
+.entrees .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+.entrees .box-container .box{
+    background: #fff;
+    border-radius: .5rem;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    transition: all .2s linear;
+    border: .5rem solid rgba(0,0,0,.2);
+    position: relative;
+    overflow: center;
+}
+
+.entrees .box-container .box .fa-heart,
+.entrees .box-container .box .fa-eye{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #3a3a3a;
+}
+.entrees .box-container .box .fa-heart{
+    right: 1.5rem;
+}
+
+.entrees .box-container .box .fa-eye{
+    right: 1.5rem;
+}
+
+.boximage{
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 30px;
+
 }
