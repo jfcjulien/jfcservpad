@@ -191,9 +191,12 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
-
-
-
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
 
 
 
@@ -449,4 +452,28 @@ header .icons #menu-bars{
     color: #3a3a3a;
     font-size: 1.8rem;
     margin-right: 1rem;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 10%;
+    margin-top: 2rem;
+
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
 }
