@@ -1,13 +1,13 @@
-let acceuil = document.querySelector ('#menu-bars')
+let accueil = document.querySelector ('#menu-bars')
 let navbar = document.querySelector ('.navbar')
 
-acceuil.onclick = () =>{
-    acceuil.classList.toggle('fa-times')
+accueil.onclick = () =>{
+    accueil.classList.toggle('fa-times')
     navbar.classList.toggle('active')
 }
 
 window.onscroll = () =>{
-    acceuil.classList.remove('fa-times')
+    accueil.classList.remove('fa-times')
     navbar.classList.remove('active')
 }
 
