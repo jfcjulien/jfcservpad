@@ -386,6 +386,12 @@ header .icons #menu-bars{
     text-align: center;
 
 }
+.entrees .box-container .box .fa-heart:hover,
+.entrees .box-container .box .fa-eye:hover{
+    background-color: #3a3a3a;
+    color: #b4dfe5;
+}
+
 .entrees .box-container .box .fa-heart{
     left: 1rem;
 }
@@ -395,8 +401,8 @@ header .icons #menu-bars{
 }
 
 .boximage{
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+    height: 25rem;
     object-fit: cover;
     border-radius: 30px;
     display: block;
