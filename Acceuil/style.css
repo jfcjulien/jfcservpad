@@ -399,8 +399,4 @@ header .icons #menu-bars{
     height: 30rem;
     object-fit: cover;
     border-radius: 30px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-
 }
