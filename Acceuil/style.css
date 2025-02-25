@@ -359,6 +359,7 @@ header .icons #menu-bars{
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
     padding-top: 9rem;
+    text-align: center;
 }
 
 .entrees .box-container .box{
@@ -393,11 +394,21 @@ header .icons #menu-bars{
 }
 
 .entrees .box-container .box .fa-heart{
-    left: 1rem;
+    left: -150rem;
 }
 
 .entrees .box-container .box .fa-eye{
+    right: -150rem;
+}
+
+.entrees .box-container .box:hover .fa-heart{
+    left: 1rem;
+    transition: all .5s linear;
+}
+
+.entrees .box-container .box:hover .fa-eye{
     right: 1rem;
+    transition: all .5s linear;
 }
 
 .boximage{
