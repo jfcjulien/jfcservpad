@@ -394,21 +394,27 @@ header .icons #menu-bars{
 }
 
 .entrees .box-container .box .fa-heart{
-    left: -150rem;
+    opacity: 0;
+    transform: translateY(1px) scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .entrees .box-container .box .fa-eye{
-    right: -150rem;
+    opacity: 0;
+    transform: translateY(1px) scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .entrees .box-container .box:hover .fa-heart{
     left: 1rem;
-    transition: all .5s linear;
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
 
 .entrees .box-container .box:hover .fa-eye{
     right: 1rem;
-    transition: all .5s linear;
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
 
 .boximage{
