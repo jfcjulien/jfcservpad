@@ -458,7 +458,8 @@ header .icons #menu-bars{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    align-items: center;
+    text-align: center;
+    color: #3a3a3a;
 
 }
 
@@ -476,4 +477,48 @@ header .icons #menu-bars{
 
 .about .row .content{
     flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    font-size: 2rem;
+}
+
+.about .row .content p{
+    font-size: 1.2rem;
+
+}
+
+.about .row .content span{
+    font-size: 1.2rem;
+
+}
+
+.about .row .content .icons-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+
+}
+
+.about .row .content .icons-container .icons{
+    background: #eee;
+    border-radius: .5rem;
+    border: .3rem solid rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 1rem;
+}
+
+.about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color: #b4dfe5;
+}
+
+.about .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+
 }
