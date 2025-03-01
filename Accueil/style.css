@@ -522,3 +522,85 @@ header .icons #menu-bars{
     font-size: 1.5rem;
 
 }
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+
+}
+
+.menu .box-container .box{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+.menu .box-container .box .image{
+    height: 25rem;
+    width: 25rem;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+
+}
+
+.menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.menu .box-container .box .image .fa-heart{
+    position: absolute;
+    top: 2.5rem; right: .1rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #eee;
+    border-radius: 50%;
+    color: #3a3a3a;
+    z-index: 9999px;
+}
+
+.menu .box-container .box .image .fa-heart:hover{
+    background-color: #3a3a3a;
+    color: #b4dfe5;
+}
+
+.menu .box-container .box .content{
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.menu .box-container .box .content .stars{
+    padding-bottom: 1rem;
+}
+
+.menu .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: #b4dfe5;
+}
+
+.menu .box-container .box .content h3{
+    color: #3a3a3a;
+    font-size: 2.5rem;
+}
+
+.menu .box-container .box .content p{
+    color: #3a3a3a;
+    font-size: 1.3rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.menu .box-container .box .content .price{
+    color: #3a3a3a;
+    margin: 1rem;
+    font-size: 2.5rem;
+}
