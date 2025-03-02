@@ -217,7 +217,6 @@ header .icons #menu-bars{
 
 
 @media (max-width:1280px){
-    
 
     
 }
@@ -238,6 +237,10 @@ header .icons #menu-bars{
 
     section{
         padding: 2rem;
+    }
+
+    .order form .inputBox .input{
+        width: 100%;
     }
 
 }
@@ -603,4 +606,56 @@ header .icons #menu-bars{
     color: #3a3a3a;
     margin: 1rem;
     font-size: 2.5rem;
+}
+
+.order form{
+    max-width: 90rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.2);
+    background: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.order form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order form .inputBox .input{
+    width: 49%;
+}
+
+.order form .inputBox .input span{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #b4dfe5;
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #3a3a3a;
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
+    border: .2rem solid #b4dfe5;
+}
+
+.order form .inputBox .input textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.order form .btn{
+    margin-top: 0;
 }
