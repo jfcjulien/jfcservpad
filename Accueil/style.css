@@ -6,7 +6,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -156,7 +155,6 @@ header .icons #menu-bars{
     padding: 1rem 0;
     color: #fff;
     font-size: 3rem;
-    text-transform: none;
     background: none;
 
 }
@@ -730,7 +728,6 @@ header .icons #menu-bars{
     padding: 1rem;
     font-size: 1.6rem;
     color: #3a3a3a;
-    text-transform: none;
     margin-bottom: 1rem;
     width: 100%;
 }
@@ -767,7 +764,6 @@ header .icons #menu-bars{
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #3a3a3a;
     color: #b4dfe5;
-    text-transform: none;
 }
 
 .footer .box-container .box a:hover{ 
