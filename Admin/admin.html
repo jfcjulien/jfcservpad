@@ -11,6 +11,34 @@
         body { padding: 20px; }
     </style>
 </head>
+
+
+
+
+<!--header section-->
+
+<header>
+
+    <img class="logo" src="/images/logo mode sombre.png" alt="Servpad">
+
+    <nav class="navbar">
+        <a class="active" href="">Accueil</a>
+        <a href="#entrees">Entrées</a>
+        <a href="#menu">Menu</a>
+        <a href="#desserts">Desserts</a>
+
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="/../Admin/admin.html" class="fas fa-shopping-cart"></a>
+
+    </div>
+</header>
+
+
 <body>
     <div class="container">
         <h1 class="text-center mb-4">Tableau de Bord Admin - Restaurant</h1>
@@ -51,5 +79,67 @@
             </tbody>
         </table>
     </div>
+
+
+
+    <!--footer-->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Établissements</h3>
+            <a href="#">Aix en Provence</a>
+            <a href="#">Bordeaux</a>
+            <a href="#">Paris</a>
+            <a href="#">Pise</a>
+            <a href="#">Rome</a>
+        </div>
+
+        <div class="box">
+            <h3>Redirection</h3>
+            <a href="#">Accueil</a>
+            <a href="#entrees">Entrées</a>
+            <a href="#menu">Menu</a>
+            <a href="#desserts">Desserts</a>
+        </div>
+
+        <div class="box">
+            <h3>Locations</h3>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://x.com/">X</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.linkedin.com/">Linkedin</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact</h3>
+            <a href="#">+33 06 07 08 09 10</a>
+            <a href="#">+33 07 08 09 10 20</a>
+            <a href="https://mail.google.com/mail/u/1/?hl=fr#inbox?compose=CllgCJNsvKZtkvlzhQKKcqkxbjTBzZffltNqjmptbjvLlMZmDgjlrbhFNrGVDvtMSTVVNZhFXmg">contact.servpad@gmail.com</a>
+            <a href="https://mail.google.com/mail/u/1/?hl=fr#inbox?compose=CllgCJNsvKZtkvlzhQKKcqkxbjTBzZffltNqjmptbjvLlMZmDgjlrbhFNrGVDvtMSTVVNZhFXmg">administration.servpad@gmail.com</a>
+
+
+        <!--pop up page du site-->
+
+            <button class="animated-button" onclick="ouvrirPopup()">ADMIN</button>
+
+            <script>
+            function ouvrirPopup() {
+                window.open('/../Admin/admin.html', 'PopupPanier', 'width=800,height=600,scrollbars=yes,resizable=yes');
+            }
+            </script>
+            
+
+        </div>
+
+    </div>
+    <div class="credit"> copyright © 2025</div>
+
+</section>
+
+<!--footer fin-->
+
 </body>
 </html>
