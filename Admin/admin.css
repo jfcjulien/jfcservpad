@@ -1,3 +1,22 @@
+*{
+    font-family: "Lilita One", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 75%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -17,6 +36,8 @@ h1 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15%;
+    margin-bottom: 30%;
 }
 
 .table {
@@ -31,12 +52,206 @@ th, td {
     vertical-align: middle;
 }
 
-.btn {
-    margin-right: 5px;
-}
 
 .btn-primary {
     display: block;
     margin: 20px auto;
     width: fit-content;
+}
+
+.sub-heading{
+    text-align: center;
+    color: cornsilk;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
+}
+
+.heading{
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: cornsilk;
+    background: #3a3a3a;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .9rem 1rem;
+}
+
+.btn:hover{
+    color: #3a3a3a;
+    background: cornsilk;
+
+}
+
+
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #3a3a3a;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+.logo{
+    height: clamp(50px, 8vh, 80px);
+    width: auto;
+}
+
+
+header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 0 0);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: cornsilk;
+    border: 0.2rem solid #3a3a3a; padding: 10px;
+    margin: 0.7rem;
+
+}
+
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: cornsilk;
+    border: 0.2rem solid cornsilk; padding: 10px;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #3a3a3a;
+    border-radius: 50%;
+    background-color: cornsilk;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: cornsilk;
+    background-color: #3a3a3a;
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+.animated-button {
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 95.02px;
+    height: 42.66px;
+    border: none;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
+  }
+  
+  .animated-button .span-mother {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .animated-button:hover .span-mother {
+    position: absolute;
+  }
+  
+  .animated-button:hover .span-mother span {
+    transform: translateY(1.2em);
+  }
+  
+  .animated-button .span-mother2 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .animated-button .span-mother2 span {
+    transform: translateY(-1.2em);
+  }
+  
+  .animated-button:hover .span-mother2 span {
+    transform: translateY(0);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box h3{
+    padding: .5rem 0;
+    font-size: 2.5rem;
+    color: #3a3a3a;
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 2rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
+    color: cornsilk;
+    
+}
+
+.footer .box-container .box a:hover{ 
+    -webkit-text-stroke-color: #3a3a3a;
+    color: #3a3a3a;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    color: #3a3a3a;
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit span{
+    color: cornsilk;
 }
