@@ -34,9 +34,11 @@ section:nth-child(even){
 
 .sub-heading{
     text-align: center;
-    color: #b4dfe5;
-    font-size: 2rem;
+    color: cornsilk;
+    font-size: 2.5rem;
     padding-top: 1rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
 }
 
 .heading{
@@ -51,16 +53,16 @@ section:nth-child(even){
     margin-top: 1rem;
     display: inline-block;
     font-size: 1.7rem;
-    color: #3a3a3a;
-    background: #b4dfe5;
+    color: cornsilk;
+    background: #3a3a3a;
     border-radius: .5rem;
     cursor: pointer;
     padding: .9rem 1rem;
 }
 
 .btn:hover{
-    color: #b4dfe5;
-    background: #3a3a3a;
+    color: #3a3a3a;
+    background: cornsilk;
 
 }
 
@@ -69,7 +71,7 @@ section:nth-child(even){
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #b4dfe5;
+    background: #3a3a3a;
     padding: 2rem 5%;
     display: flex;
     align-items: center;
@@ -92,7 +94,7 @@ header .navbar a{
     font-size: 2rem;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
-    color: #3a3a3a;
+    color: cornsilk;
     border: 0.2rem solid #3a3a3a; padding: 10px;
     margin: 0.7rem;
 
@@ -103,9 +105,6 @@ header .navbar a.active,
 header .navbar a:hover{
     color: cornsilk;
     border: 0.2rem solid cornsilk; padding: 10px;
-    -webkit-text-stroke: 0.1rem;
-    -webkit-text-stroke-color: #3a3a3a;
-
 }
 
 header .icons i,
@@ -178,7 +177,7 @@ header .icons #menu-bars{
 }
 
 #search-form label:hover{
-    color: #b4dfe5;
+    color: cornsilk;
 }
 
 #search-form #close{
@@ -257,7 +256,7 @@ header .icons #menu-bars{
     header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: #b4dfe5;
+        background: #3a3a3a;
         border-top: .2rem solid rgba(0,0,0,.2);
         padding: 2rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -292,7 +291,7 @@ header .icons #menu-bars{
     header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: #b4dfe5;
+        background: #3a3a3a;
         border-top: .2rem solid rgba(0,0,0,.2);
         padding: 3rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -314,7 +313,7 @@ header .icons #menu-bars{
     header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: #b4dfe5;
+
         border-top: .2rem solid rgba(0,0,0,.2);
         padding: 4rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -351,8 +350,10 @@ header .icons #menu-bars{
 }
 
 .home .home-slider .slide .content span{
-    color: #b4dfe5;
+    color: cornsilk;
     font-size: 2.5rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
 }
 
 .home .home-slider .slide .content h3{
@@ -403,7 +404,8 @@ header .icons #menu-bars{
 .entrees .box-container .box .fa-heart:hover,
 .entrees .box-container .box .fa-eye:hover{
     background-color: #3a3a3a;
-    color: #b4dfe5;
+    color: cornsilk;
+
 }
 
 .entrees .box-container .box .fa-heart{
@@ -445,8 +447,11 @@ header .icons #menu-bars{
 }
 
 .entrees .box-container .box .stars{
-    color: #b4dfe5;
+    color: cornsilk;
     font-size: 1.5rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
+
 }
 
 .entrees .box-container .box i{
@@ -520,7 +525,10 @@ header .icons #menu-bars{
 
 .about .row .content .icons-container .icons i{
     font-size: 2.5rem;
-    color: #b4dfe5;
+    color: cornsilk;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
+
 }
 
 .about .row .content .icons-container .icons span{
@@ -575,7 +583,7 @@ header .icons #menu-bars{
 
 .menu .box-container .box .image .fa-heart:hover{
     background-color: #3a3a3a;
-    color: #b4dfe5;
+    color: cornsilk;
 }
 
 .menu .box-container .box .content{
@@ -589,7 +597,9 @@ header .icons #menu-bars{
 
 .menu .box-container .box .content .stars i{
     font-size: 1.7rem;
-    color: #b4dfe5;
+    color: cornsilk;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
 }
 
 .menu .box-container .box .content h3{
@@ -647,7 +657,7 @@ header .icons #menu-bars{
 .desserts .box-container .box .fa-heart:hover,
 .desserts .box-container .box .fa-eye:hover{
     background-color: #3a3a3a;
-    color: #b4dfe5;
+    color: cornsilk;
 }
 
 .desserts .box-container .box .fa-heart{
@@ -681,8 +691,10 @@ header .icons #menu-bars{
 }
 
 .desserts .box-container .box .stars{
-    color: #b4dfe5;
+    color: cornsilk;
     font-size: 1.5rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
 }
 
 .desserts .box-container .box i{
@@ -718,7 +730,9 @@ header .icons #menu-bars{
     display: block;
     padding: .5rem 0;
     font-size: 1.5rem;
-    color: #b4dfe5;
+    color: cornsilk;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
 }
 
 .order form .inputBox .input input,
@@ -734,7 +748,7 @@ header .icons #menu-bars{
 
 .order form .inputBox .input input:focus,
 .order form .inputBox .input textarea:focus{
-    border: .2rem solid #b4dfe5;
+    border: .2rem solid cornsilk;
 }
 
 .order form .inputBox .input textarea{
@@ -763,11 +777,12 @@ header .icons #menu-bars{
     font-size: 2rem;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #3a3a3a;
-    color: #b4dfe5;
+    color: cornsilk;
+    
 }
 
 .footer .box-container .box a:hover{ 
-    -webkit-text-stroke-color: #b4dfe5;
+    -webkit-text-stroke-color: #3a3a3a;
     color: #3a3a3a;
 }
 
@@ -782,7 +797,7 @@ header .icons #menu-bars{
 }
 
 .footer .credit span{
-    color: #b4dfe5;
+    color: cornsilk;
 }
 
 
@@ -806,12 +821,14 @@ header .icons #menu-bars{
     width: 95.02px;
     height: 42.66px;
     border: none;
-    background-color: #b4dfe5;
+    background-color: cornsilk;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
   }
   
   .animated-button .span-mother {
