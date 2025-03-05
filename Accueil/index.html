@@ -33,7 +33,7 @@
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
         <a href="#" class="fas fa-heart"></a>
-        <a href="/Panier/panier.html" class="fas fa-shopping-cart"></a>
+        <a href="/../Admin/admin.html" class="fas fa-shopping-cart"></a>
 
     </div>
 </header>
@@ -114,7 +114,7 @@
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-eye"></a>
             <img class="boximage" src="/images/crevettes.png" alt="crevettes">
-            <h3>tasty food</h3>
+            <h3 class="nom-plat">Tasty Food..</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -122,9 +122,10 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <span>16.99€</span>
-            <a href="#" class="btn">Commander</a>
+            <span class="prix-plat">16.99€</span>
+            <a href="#" class="btn" onclick="ajouterPanier(this)">Commander</a>
         </div>
+        
 
         <div class="box">
             <a href="#" class="fas fa-heart"></a>
@@ -611,7 +612,9 @@
 <!--projet swiper pour le slider-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script src="/accueil/script.js"></script>
+<script src="/../Admin/admin.js"></script>
+<script src="/../Accueil/script.js"></script>
+
 
 </body>
 </html>

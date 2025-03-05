@@ -1,4 +1,4 @@
-function ajouterPlat() {
+function ajouterPlat() { 
     const tableBody = document.getElementById("table-body");
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
@@ -50,6 +50,7 @@ function sauvegarderPlat(button) {
         <td>
             <button class="btn btn-warning btn-sm" onclick="modifierPlat(this)">Modifier</button>
             <button class="btn btn-danger btn-sm" onclick="supprimerPlat(this)">Supprimer</button>
+            <button class="btn btn-primary btn-sm" onclick="ajouterPanier(this)">Ajouter au panier</button>
         </td>
     `;
 }
@@ -57,3 +58,37 @@ function sauvegarderPlat(button) {
 function supprimerPlat(button) {
     button.closest("tr").remove();
 }
+
+
+
+function afficherPanier() {
+    let panier = JSON.parse(localStorage.getItem("panier")) || [];
+    const tableBody = document.getElementById("table-body");
+
+    tableBody.innerHTML = ""; // Vider la table avant d'ajouter les plats
+
+    panier.forEach((plat, index) => {
+        const newRow = document.createElement("tr");
+        newRow.innerHTML = `
+            <td>${index + 1}</td>
+            <td>${plat.nom}</td>
+            <td>${plat.prix}€</td>
+            <td>${plat.categorie}</td>
+            <td>
+                <button class="btn btn-danger btn-sm" onclick="supprimerDuPanier(${index})">Supprimer</button>
+            </td>
+        `;
+        tableBody.appendChild(newRow);
+    });
+}
+
+// Supprimer un élément du panier
+function supprimerDuPanier(index) {
+    let panier = JSON.parse(localStorage.getItem("panier")) || [];
+    panier.splice(index, 1); // Supprime l'élément à l'index donné
+    localStorage.setItem("panier", JSON.stringify(panier));
+    afficherPanier(); // Mettre à jour l'affichage
+}
+
+// Charger le panier au chargement de la page admin.html
+document.addEventListener("DOMContentLoaded", afficherPanier);
