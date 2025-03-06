@@ -334,7 +334,7 @@ header .icons #menu-bars{
     padding-top: 9rem;
 }
 
-.home .home-slider .slide .content{
+.home .home-slider .slide .box{
     flex: 1 1 45rem;
 
 }
@@ -349,19 +349,19 @@ header .icons #menu-bars{
 
 }
 
-.home .home-slider .slide .content span{
+.home .home-slider .slide .box span{
     color: cornsilk;
     font-size: 2.5rem;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #3a3a3a;
 }
 
-.home .home-slider .slide .content h3{
+.home .home-slider .slide .box h3{
     color: #3a3a3a;
     font-size: 7rem;
 }
 
-.home .home-slider .slide .content p{
+.home .home-slider .slide .box p{
     color: #3a3a3a;
     font-size: 2.2rem;
     padding: .5rem 0;
