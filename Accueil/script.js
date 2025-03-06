@@ -47,11 +47,12 @@ function ajouterPanier(button) {
     const box = button.closest(".box"); // Récupérer la div .box du plat
     const nom = box.querySelector(".nom-plat").innerText;
     const prix = box.querySelector(".prix-plat").innerText.replace("€", "").trim(); // Enlever l'euro et les espaces
+    const cat = box.querySelector(".cat-plat").innerText;
 
     const plat = {
         nom: nom,
         prix: prix,
-        categorie: "Non spécifiée" // À modifier si besoin
+        categorie: cat, // À modifier si besoin
     };
 
     let panier = JSON.parse(localStorage.getItem("panier")) || [];

@@ -858,3 +858,18 @@ header .icons #menu-bars{
   .animated-button:hover .span-mother2 span {
     transform: translateY(0);
   }
+
+
+
+
+  .cat-plat {
+    text-indent: -9999px; /* Déplace le texte en dehors de la zone visible */
+    display: inline-block; /* Assure que l'élément reste visible */
+    width: 20px; /* Ajuste selon tes besoins */
+    height: 20px; /* Ajuste selon tes besoins */
+    background-color: #ffffff; /* Facultatif : ajoute une couleur de fond */
+}
+
+  .cat-plat {
+    font-size: 0;
+}
