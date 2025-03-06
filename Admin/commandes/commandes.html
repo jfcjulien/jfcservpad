@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commandes Admin</title>
+    <script src="commandes.js" defer></script>
+</head>
+<body>
+    <h2>Accès Administrateur</h2>
+    <label for="code">Entrez le code :</label>
+    <input type="password" id="code">
+    <button onclick="verifierCode()">Se connecter</button>
+
+    <div id="commandes-section" style="display:none;">
+        <h2>Commandes Validées</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Plats</th>
+                </tr>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Table</th>
+                            <th>Plats</th>
+                        </tr>
+                    </thead>
+                    <tbody id="commandes-body"></tbody>
+                </table>                
+    </div>
+</body>
+</html>

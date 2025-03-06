@@ -80,15 +80,77 @@ function afficherPanier() {
         `;
         tableBody.appendChild(newRow);
     });
+
+// Ajouter le champ pour choisir la table et le bouton "Valider la commande"
+if (panier.length > 0) {
+    document.getElementById("validation-section").innerHTML = `
+        <label for="table-number">Numéro de table :</label>
+        <input type="number" id="table-number" min="1" required>
+        <button class="btn btn-success" onclick="validerCommande()">Valider la commande</button>
+    `;
+} else {
+    document.getElementById("validation-section").innerHTML = "";
+}
 }
 
 // Supprimer un élément du panier
 function supprimerDuPanier(index) {
     let panier = JSON.parse(localStorage.getItem("panier")) || [];
-    panier.splice(index, 1); // Supprime l'élément à l'index donné
+    panier.splice(index, 1);
     localStorage.setItem("panier", JSON.stringify(panier));
-    afficherPanier(); // Mettre à jour l'affichage
+    afficherPanier();
 }
 
-// Charger le panier au chargement de la page admin.html
+// Valider la commande et stocker dans localStorage
+function validerCommande() {
+    let panier = JSON.parse(localStorage.getItem("panier")) || [];
+    if (panier.length === 0) {
+        alert("Le panier est vide !");
+        return;
+    }
+
+    let commandes = JSON.parse(localStorage.getItem("commandes")) || [];
+    commandes.push({ date: new Date().toLocaleString(), plats: panier });
+
+    localStorage.setItem("commandes", JSON.stringify(commandes));
+
+    // Vider le panier après validation
+    localStorage.removeItem("panier");
+    afficherPanier();
+    
+    alert("Commande validée !");
+}
+
+// Valider la commande avec numéro de table
+function validerCommande() {
+    let panier = JSON.parse(localStorage.getItem("panier")) || [];
+    let tableNumber = document.getElementById("table-number").value;
+
+    if (panier.length === 0) {
+        alert("Le panier est vide !");
+        return;
+    }
+
+    if (!tableNumber) {
+        alert("Veuillez entrer un numéro de table !");
+        return;
+    }
+
+    let commandes = JSON.parse(localStorage.getItem("commandes")) || [];
+    commandes.push({ 
+        date: new Date().toLocaleString(), 
+        table: tableNumber,
+        plats: panier 
+    });
+
+    localStorage.setItem("commandes", JSON.stringify(commandes));
+
+    // Vider le panier après validation
+    localStorage.removeItem("panier");
+    afficherPanier();
+    
+    alert(`Commande validée pour la table ${tableNumber} !`);
+}
+
+// Charger le panier au démarrage
 document.addEventListener("DOMContentLoaded", afficherPanier);
