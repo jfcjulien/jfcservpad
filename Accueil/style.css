@@ -81,7 +81,7 @@ header{
 }
 
 .logo{
-    height: clamp(50px, 8vh, 80px);
+    height: clamp(90px, 8vh, 110px);
     width: auto;
 }
 
@@ -238,6 +238,11 @@ header .icons #menu-bars{
 
     .order form .inputBox .input{
         width: 100%;
+    }
+
+    .logo{
+        height: clamp(50px, 8vh, 80px);
+        width: auto;
     }
 
 }
