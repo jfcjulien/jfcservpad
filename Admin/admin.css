@@ -107,7 +107,7 @@ header{
 }
 
 .logo{
-    height: clamp(50px, 8vh, 80px);
+    height: clamp(90px, 8vh, 110px);
     width: auto;
 }
 
