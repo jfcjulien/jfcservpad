@@ -255,3 +255,172 @@ header .icons #menu-bars{
 .footer .credit span{
     color: cornsilk;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    
+    html{
+        font-size: 60%;
+
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .order form .inputBox .input{
+        width: 100%;
+    }
+
+    .logo{
+        height: clamp(50px, 8vh, 80px);
+        width: auto;
+    }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+
+    }
+
+
+    #search-form #search-box{
+        width: 90%;
+        margin: 0 0.1rem;
+    }
+
+    section{
+        padding: 8rem 9%;
+        
+    }
+
+}
+
+@media (max-width:520px){
+
+    html{
+        font-size: 40%;
+    }
+
+    section{
+        padding: 18rem 9%;
+    
+    }
+
+    .container{
+        margin-top: 20rem;
+    }
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #3a3a3a;
+        border-top: .2rem solid rgba(0,0,0,.2);
+        padding: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        
+    }
+
+    .animated-button{
+        width: 6.5rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width:320px){
+
+    html{
+        font-size: 20%;
+    }
+
+    section{
+        padding: 40rem 9%;
+    
+    }
+
+    .container{
+        margin-top: 28rem;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #3a3a3a;
+        border-top: .2rem solid rgba(0,0,0,.2);
+        padding: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        
+    }
+
+    header .navbar a{
+        font-size: 1.5rem;
+    }
+}
