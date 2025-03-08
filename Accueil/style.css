@@ -772,3 +772,46 @@ header .icons #menu-bars{
   .cat-plat {
     font-size: 0;
 }
+
+
+.boissons .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding-top: 9rem;
+    text-align: center;
+}
+
+.boissons .box-container .box{
+    background: #fff;
+    border-radius: .5rem;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    transition: all .2s linear;
+    border: .5rem solid rgba(0,0,0,.2);
+    position: relative;
+    overflow: center;
+}
+
+.boissons .box-container .box h3{
+    color: #3a3a3a;
+    font-size: 2.5rem;
+}
+
+.boissons .box-container .box .stars{
+    color: cornsilk;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #3a3a3a;
+
+}
+
+.boissons .box-container .box i{
+    font-size: 1.7rem;
+}
+
+.boissons .box-container .box span{
+    color: #3a3a3a;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}

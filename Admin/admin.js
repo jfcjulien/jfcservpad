@@ -1,6 +1,3 @@
-let accueil = document.querySelector ('#menu-bars')
-let navbar = document.querySelector ('.navbar')
-
 function ajouterPlat() { 
     const tableBody = document.getElementById("table-body");
     const newRow = document.createElement("tr");
