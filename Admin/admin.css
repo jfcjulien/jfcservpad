@@ -329,6 +329,10 @@ header .icons #menu-bars{
         padding: 2rem;
     }
 
+    body .container{
+        margin-top: 15rem;
+    }
+
     .order form .inputBox .input{
         width: 100%;
     }
@@ -371,9 +375,10 @@ header .icons #menu-bars{
     
     }
 
-    .container{
-        margin-top: 20rem;
+    body .container{
+        margin-top: 25rem;
     }
+
 
     header .icons #menu-bars{
         display: inline-block;
@@ -406,9 +411,10 @@ header .icons #menu-bars{
     
     }
 
-    .container{
-        margin-top: 28rem;
+    body .container{
+        margin-top: 40rem;
     }
+
 
     header .navbar{
         position: absolute;
