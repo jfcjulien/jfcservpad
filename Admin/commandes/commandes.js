@@ -50,3 +50,26 @@ function afficherCommandes() {
         commandesBody.appendChild(row);
     });
 }
+
+
+function validerCommande(button) {
+    const row = button.closest("tr");  
+    const nomPlat = row.cells[0].innerText;
+    const prixPlat = row.cells[1].innerText;
+    const table = row.cells[2].innerText;
+
+    // Récupérer les commandes prêtes depuis localStorage
+    let commandesPretes = JSON.parse(localStorage.getItem("commandesPretes")) || [];
+
+    // Ajouter la commande validée
+    commandesPretes.push({ nom: nomPlat, prix: prixPlat, table: table });
+    localStorage.setItem("commandesPretes", JSON.stringify(commandesPretes));
+
+    // Supprimer la commande de la liste
+    row.remove();
+
+    // Rediriger vers le panier
+    setTimeout(() => {
+        window.location.href = "panier.html";
+    }, 500);
+}

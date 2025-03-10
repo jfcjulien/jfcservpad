@@ -154,3 +154,19 @@ function validerCommande() {
 
 // Charger le panier au démarrage
 document.addEventListener("DOMContentLoaded", afficherPanier);
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let commandesPretes = JSON.parse(localStorage.getItem("commandesPretes")) || [];
+    const commandesDiv = document.getElementById("commandes-pretes");
+
+    commandesPretes.forEach(commande => {
+        const commandeHTML = `
+            <div class="commande">
+                <p><strong>${commande.nom}</strong> - ${commande.prix} (Table ${commande.table})</p>
+            </div>
+        `;
+        commandesDiv.innerHTML += commandeHTML;
+    });
+});
