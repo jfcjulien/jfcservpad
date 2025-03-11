@@ -1,4 +1,4 @@
-ServPad - Votre Carte Interactive des Commandes en Ligne !
+# ServPad - Votre Carte Interactive des Commandes en Ligne !
 
 Bienvenue sur ServPad ! 🚀
 
@@ -14,7 +14,7 @@ Pourquoi utiliser ServPad ?
 ✅ Personnalisation avancée : Ajoutez vos produits, descriptions et images en quelques clics
 ✅ Gestion efficace : Suivi des commandes en temps réel et notifications instantanées
 
-Comment ça marche ?
+# Comment ça marche ?
 
 Commandez sans perte de temps sur https://servpad.fr/
 
