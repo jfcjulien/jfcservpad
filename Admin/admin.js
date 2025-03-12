@@ -170,3 +170,19 @@ document.addEventListener("DOMContentLoaded", function () {
         commandesDiv.innerHTML += commandeHTML;
     });
 });
+
+let accueil = document.querySelector ('#menu-bars')
+let navbar = document.querySelector ('.navbar')
+
+accueil.onclick = () =>{
+    accueil.classList.toggle('fa-times')
+    navbar.classList.toggle('active')
+}
+
+let section = document.querySelectorAll('section')
+let navLinks = document.querySelectorAll('header .navbar a')
+
+window.onscroll = () =>{
+    accueil.classList.remove('fa-times')
+    navbar.classList.remove('active')
+}
