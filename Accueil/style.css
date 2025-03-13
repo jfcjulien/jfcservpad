@@ -815,3 +815,8 @@ header .icons #menu-bars{
     font-size: 1.8rem;
     margin-right: 1rem;
 }
+
+.emoji h1{
+    color: #3a3a3a;
+    text-decoration: underline;
+}
