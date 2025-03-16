@@ -11,45 +11,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="admin.css">
-
-    <h2>Commandes prêtes</h2>
-<div id="commandes-pretes"></div>
-
-    <script defer src="admin.js"></script>
     <style>
         body { padding: 20px; }
     </style>
 </head>
-
-
-
-
-<!--header section-->
-
-<header>
-
-    <img class="logo" src="/images/logo servpad.png" alt="Servpad">
-
-    <nav class="navbar">
-        <a class="active" href="/Accueil/index.html">Accueil</a>
-        <a href="/Accueil/index.html#entrees">Entrées</a>
-        <a href="/Accueil/index.html#menu">Menu</a>
-        <a href="/Accueil/index.html#desserts">Desserts</a>
-
-    </nav>
-
-    <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-    </div>
-</header>
-
-
 <body>
+    <!-- Header Section -->
+    <header>
+        <img class="logo" src="/images/logo servpad.png" alt="Servpad">
+        <nav class="navbar">
+            <a class="active" href="/Accueil/index.html">Accueil</a>
+            <a href="/Accueil/index.html#entrees">Entrées</a>
+            <a href="/Accueil/index.html#menu">Menu</a>
+            <a href="/Accueil/index.html#desserts">Desserts</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+    </header>
+
+    <!-- Main Content -->
     <div class="container">
         <h1 class="text-center mb-4">Votre Panier 🛒</h1>
         
+        <!-- Bouton pour ajouter un plat -->
         <button class="btn btn-primary mb-3" onclick="ajouterPlat()">Ajouter un Plat</button>
         
+        <!-- Tableau des commandes -->
         <table class="table table-bordered">
             <thead class="table-dark">
                 <tr>
@@ -61,92 +49,53 @@
                 </tr>
             </thead>
             <tbody id="table-body">
-                <tr>
-                    <td>1</td>
-                    <td>Pâtes Carbonara</td>
-                    <td>12.50</td>
-                    <td>Plats</td>
-                    <td>
-                        <button class="btn btn-warning btn-sm" onclick="modifierPlat(this)">Modifier</button>
-                        <button class="btn btn-danger btn-sm" onclick="supprimerPlat(this)">Supprimer</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Tarte aux Pommes</td>
-                    <td>6.00</td>
-                    <td>Desserts</td>
-                    <td>
-                        <button class="btn btn-warning btn-sm" onclick="modifierPlat(this)">Modifier</button>
-                        <button class="btn btn-danger btn-sm" onclick="supprimerPlat(this)">Supprimer</button>
-                    </td>
-                </tr>
+                <!-- Les lignes seront ajoutées dynamiquement ici -->
             </tbody>
         </table>
-        <div id="validation-section"></div>
 
+        <!-- Section de validation -->
+        <div id="validation-section">
+            <button class="btn btn-success mb-3" onclick="validerCommandes()">Valider les Commandes</button>
+        </div>
     </div>
 
-
-
-    <!--footer-->
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>Établissements</h3>
-            <a href="#">Aix en Provence</a>
-            <a href="#">Bordeaux</a>
-            <a href="#">Paris</a>
-            <a href="#">Pise</a>
-            <a href="#">Rome</a>
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Établissements</h3>
+                <a href="#">Aix en Provence</a>
+                <a href="#">Bordeaux</a>
+                <a href="#">Paris</a>
+                <a href="#">Pise</a>
+                <a href="#">Rome</a>
+            </div>
+            <div class="box">
+                <h3>Redirection</h3>
+                <a href="#">Accueil</a>
+                <a href="#entrees">Entrées</a>
+                <a href="#menu">Menu</a>
+                <a href="#desserts">Desserts</a>
+            </div>
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://x.com/">X</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.linkedin.com/">Linkedin</a>
+            </div>
+            <div class="box">
+                <h3>Contact</h3>
+                <a href="#">+33 06 07 08 09 10</a>
+                <a href="#">+33 07 08 09 10 20</a>
+                <a href="https://mail.google.com/mail/u/1/?hl=fr#inbox?compose=CllgCJNsvKZtkvlzhQKKcqkxbjTBzZffltNqjmptbjvLlMZmDgjlrbhFNrGVDvtMSTVVNZhFXmg">contact.servpad@gmail.com</a>
+                <a href="https://mail.google.com/mail/u/1/?hl=fr#inbox?compose=CllgCJNsvKZtkvlzhQKKcqkxbjTBzZffltNqjmptbjvLlMZmDgjlrbhFNrGVDvtMSTVVNZhFXmg">administration.servpad@gmail.com</a>
+            </div>
         </div>
+        <div class="credit"> copyright © 2025</div>
+    </section>
 
-        <div class="box">
-            <h3>Redirection</h3>
-            <a href="#">Accueil</a>
-            <a href="#entrees">Entrées</a>
-            <a href="#menu">Menu</a>
-            <a href="#desserts">Desserts</a>
-        </div>
-
-        <div class="box">
-            <h3>Locations</h3>
-            <a href="https://www.facebook.com/">Facebook</a>
-            <a href="https://x.com/">X</a>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://www.linkedin.com/">Linkedin</a>
-        </div>
-
-        <div class="box">
-            <h3>Contact</h3>
-            <a href="#">+33 06 07 08 09 10</a>
-            <a href="#">+33 07 08 09 10 20</a>
-            <a href="https://mail.google.com/mail/u/1/?hl=fr#inbox?compose=CllgCJNsvKZtkvlzhQKKcqkxbjTBzZffltNqjmptbjvLlMZmDgjlrbhFNrGVDvtMSTVVNZhFXmg">contact.servpad@gmail.com</a>
-            <a href="https://mail.google.com/mail/u/1/?hl=fr#inbox?compose=CllgCJNsvKZtkvlzhQKKcqkxbjTBzZffltNqjmptbjvLlMZmDgjlrbhFNrGVDvtMSTVVNZhFXmg">administration.servpad@gmail.com</a>
-
-
-        <!--pop up page du site-->
-
-            <button class="animated-button" onclick="ouvrirPopup()">ADMIN</button>
-
-            <script>
-            function ouvrirPopup() {
-                window.open('/../Admin//commandes/commandes.html', 'PopupPanier', 'width=800,height=600,scrollbars=yes,resizable=yes');
-            }
-            </script>
-            
-
-        </div>
-
-    </div>
-    <div class="credit"> copyright © 2025</div>
-
-</section>
-
-<!--footer fin-->
-
+    <!-- Script JavaScript -->
+    <script src="admin.js"></script>
 </body>
 </html>
