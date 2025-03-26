@@ -22,6 +22,8 @@ Créez votre carte interactive en ajoutant vos produits et services
 
 Partagez le lien avec vos clients via QR Code ou réseaux sociaux
 
+![code_202503260823148](https://github.com/user-attachments/assets/de3fae84-363c-4039-bb9b-922cfe77d921)
+
 Recevez et gérez vos commandes en toute simplicité
 
 Rejoignez-nous dès maintenant !
