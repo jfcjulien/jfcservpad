@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://45.147.98.179:3000";
+const API_BASE_URL = "https://45.147.98.179:3000";
 
 // Ajouter un plat (frontend uniquement)
 function ajouterPlat() {
