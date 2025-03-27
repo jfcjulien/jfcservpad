@@ -60,7 +60,7 @@ var swiper = new Swiper(".mySwiper", {
 }
 
 async function envoyerCommandeAPI(plat) {
-    const apiUrl = "http://45.147.98.179:3000/set/commande"; // URL de l'API
+    const apiUrl = "https://45.147.98.179:3000/set/commande"; // URL de l'API
     const numeroDeTable = "1"; // Remplacez par le numéro de table approprié
 
     const data = {
