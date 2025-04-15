@@ -8,6 +8,7 @@ function ajouterPlat() {
         <td>#</td>
         <td><input type="text" placeholder="Nom du plat"></td>
         <td><input type="number" placeholder="Prix"></td>
+        <td><input type="number" placeholder="Numéro de table"></td>
         <td>
             <select>
                 <option>Entrées</option>
@@ -30,7 +31,7 @@ async function sauvegarderPlat(button) {
     const plat = {
         commande: inputs[0].value,
         prix: parseFloat(inputs[1].value),
-        numeroDeTable: "N/A" // Pas encore assigné à une table
+        numeroDeTable: inputs[2].value // Récupérer la valeur du numéro de table
     };
     
     try {
@@ -78,7 +79,8 @@ async function afficherCommandes() {
                 <td>${index + 1}</td>
                 <td>${plat.commande}</td>
                 <td>${plat.prix}€</td>
-                <td>${plat.numeroDeTable || "Non attribué"}</td>
+                <td>${plat.type}</td>
+                <td>${plat.numeroDeTable || "Non attribué"}</td> <!-- Afficher le numéro de table -->
                 <td>
                     <button class="btn btn-danger btn-sm" onclick="supprimerPlat(this)">Supprimer</button>
                 </td>
