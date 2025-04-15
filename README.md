@@ -8,10 +8,10 @@ ServPad est une plateforme innovante permettant aux commerçants et restaurateur
 
 Pourquoi utiliser ServPad ?
 
-✅ Expérience interactive : Une interface moderne et intuitive pour vos clients
-✅ Gain de temps : Plus de confusion sur les commandes, tout est automatisé
-✅ Accessibilité : Accessible sur PC, tablette et mobile sans installation
-✅ Personnalisation avancée : Ajoutez vos produits, descriptions et images en quelques clics
+✅ Expérience interactive : Une interface moderne et intuitive pour vos clients  
+✅ Gain de temps : Plus de confusion sur les commandes, tout est automatisé  
+✅ Accessibilité : Accessible sur PC, tablette et mobile sans installation  
+✅ Personnalisation avancée : Ajoutez vos produits, descriptions et images en quelques clics  
 ✅ Gestion efficace : Suivi des commandes en temps réel et notifications instantanées
 
 # Comment ça marche ?
@@ -21,6 +21,9 @@ Commandez sans perte de temps sur https://servpad.fr/
 Créez votre carte interactive en ajoutant vos produits et services
 
 Partagez le lien avec vos clients via QR Code ou réseaux sociaux
+
+<!-- Image avec réduction de taille -->
+<img src="https://github.com/user-attachments/assets/de3fae84-363c-4039-bb9b-922cfe77d921" alt="QR Code" width="300"/>
 
 Recevez et gérez vos commandes en toute simplicité
 
