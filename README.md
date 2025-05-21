@@ -31,7 +31,7 @@ Rejoignez-nous dès maintenant !
 
 Ne passez pas à côté de la révolution des commandes en ligne. Essayez ServPad dès aujourd'hui et transformez l'expérience de vos clients !
 
-🔗 Accédez à https://servpad.fr/
+🔗 Accédez à http://servpad.fr/
 
 📢 Suivez-nous sur les réseaux sociaux pour rester informé des nouveautés !
 
