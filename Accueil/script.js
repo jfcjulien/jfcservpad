@@ -80,7 +80,7 @@ async function envoyerCommandeAPI(plat) {
 
         if (response.ok) {
             const result = await response.json();
-            alert(`${plat.nom} a été ajouté au panier et envoyé à l'API !`);
+            alert(`${plat.nom} a été ajouté au panier`);
             console.log("Réponse de l'API:", result);
         } else {
             const error = await response.json();
