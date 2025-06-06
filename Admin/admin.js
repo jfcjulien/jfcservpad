@@ -1,5 +1,12 @@
 const API_BASE_URL = "http://45.147.98.179:3000";
 
+// Générer ou récupérer un ID de client unique
+let clientId = localStorage.getItem("clientId");
+if (!clientId) {
+    clientId = crypto.randomUUID();
+    localStorage.setItem("clientId", clientId);
+}
+
 // Ajouter un plat (frontend uniquement)
 function ajouterPlat() {
     const tableBody = document.getElementById("table-body");
@@ -31,7 +38,9 @@ async function sauvegarderPlat(button) {
     const plat = {
         commande: inputs[0].value,
         prix: parseFloat(inputs[1].value),
-        numeroDeTable: inputs[2].value // Récupérer la valeur du numéro de table
+        numeroDeTable: inputs[2].value,
+        type: inputs[3].value,
+        clientId: clientId // 👈 Ajout du clientId
     };
     
     try {
@@ -62,10 +71,10 @@ async function supprimerPlat(button) {
     }
 }
 
-// Afficher toutes les commandes
+// Afficher toutes les commandes du client actuel uniquement
 async function afficherCommandes() {
     try {
-        const response = await fetch(`${API_BASE_URL}/getall`);
+        const response = await fetch(`${API_BASE_URL}/getall?clientId=${clientId}`); // 👈 Filtrage par clientId
         if (!response.ok) throw new Error("Erreur lors de la récupération des commandes");
         const commandes = await response.json();
         
@@ -80,7 +89,7 @@ async function afficherCommandes() {
                 <td>${plat.commande}</td>
                 <td>${plat.prix}€</td>
                 <td>${plat.type}</td>
-                <td>${plat.numeroDeTable || "Non attribué"}</td> <!-- Afficher le numéro de table -->
+                <td>${plat.numeroDeTable || "Non attribué"}</td>
                 <td>
                     <button class="btn btn-danger btn-sm" onclick="supprimerPlat(this)">Supprimer</button>
                 </td>
