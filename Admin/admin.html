@@ -61,6 +61,18 @@
         </div>
     </div>
 
+        <div id="validation-static" class="text-center mt-4">
+            <label for="table-number" class="form-label">Numéro de table :</label><br>
+            <input type="number" id="table-number" class="form-control d-inline-block w-auto mb-3" min="1" required><br>
+            <button class="btn btn-success btn-lg" onclick="validerCommandeEtEnvoyer()">
+            <i class="fas fa-check-circle"></i> Valider la commande
+            </button>
+        </div>
+
+
+
+
+
     <!-- Footer Section -->
     <section class="footer">
         <div class="box-container">
@@ -99,5 +111,7 @@
 
     <!-- Script JavaScript -->
     <script src="admin.js"></script>
+    <script src="/../Accueil/script.js"></script>
+    <script type="module" src="/../Accueil/firebase.js"></script>
 </body>
 </html>

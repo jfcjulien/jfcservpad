@@ -18,6 +18,8 @@
     
 <!--header section-->
 
+
+
 <header>
 
     <img class="logo" src="/images/logo servpad.png" alt="Servpad">
@@ -48,7 +50,6 @@
     <label for="search-box" class="fas fa-search"></label>
     <i class="fas fa-times" id="close"></i>
 </form>
-
 
 <!--home section starts-->
 
@@ -110,8 +111,24 @@
 
     <h3 class="sub-heading">Nos boissons</h3>
     <h1 class="heading">Boissons</h1>
-
     <div class="box-container">
+
+
+
+
+        <div class="box">
+            <img class="boximage" src="/images/champagne.png" alt="champagne">
+            <h3 class="nom-plat">TEST</h3>
+            <span class="cat-plat">Boissons</span>
+            <span class="prix-plat">7.50€</span>
+            <a href="#boissons" class="btn" onclick="envoyerCommande('TEST', 12.5, 'boisson')">Commander un test</a>
+        </div>
+
+
+
+
+
+
 
         <div class="box">
             <img class="boximage" src="/images/champagne.png" alt="champagne">
@@ -1096,6 +1113,7 @@
 
 <script src="/../Admin/admin.js"></script>
 <script src="/../Accueil/script.js"></script>
+<script type="module" src="/../Accueil/firebase.js"></script>
 
 
 </body>
