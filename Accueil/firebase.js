@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getFirestore, collection, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
 
 // Ton vrai config Firebase ici 👇
 const firebaseConfig = {
@@ -53,7 +54,9 @@ window.validerCommandeEtEnvoyer = async function () {
   };
 
   try {
-    const docRef = await addDoc(collection(db, "commandes"), commande);
+    const randomId = Math.random().toString(36).substring(2, 6); // ID aléatoire court
+    const customId = `Table-${tableNumber}-${randomId}`;
+    await setDoc(doc(db, "commandes", customId), commande);
     alert("Commande envoyée à la cuisine, Merci !!");
 
     // Vider le panier
