@@ -54,7 +54,7 @@ window.validerCommandeEtEnvoyer = async function () {
 
   try {
     const docRef = await addDoc(collection(db, "commandes"), commande);
-    alert("Commande envoyée à Firebase ! ID : " + docRef.id);
+    alert("Commande envoyée à la cuisine, Merci !!");
 
     // Vider le panier
     localStorage.removeItem("panier");
