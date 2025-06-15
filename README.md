@@ -16,7 +16,7 @@ Pourquoi utiliser ServPad ?
 
 # Comment ça marche ?
 
-Commandez sans perte de temps sur http://servpad.fr/
+Commandez sans perte de temps sur https://servpad.fr/
 
 Créez votre carte interactive en ajoutant vos produits et services
 
@@ -31,7 +31,7 @@ Rejoignez-nous dès maintenant !
 
 Ne passez pas à côté de la révolution des commandes en ligne. Essayez ServPad dès aujourd'hui et transformez l'expérience de vos clients !
 
-🔗 Accédez à http://servpad.fr/
+🔗 Accédez à https://servpad.fr/
 
 📢 Suivez-nous sur les réseaux sociaux pour rester informé des nouveautés !
 
