@@ -77,6 +77,7 @@ function afficherPanier() {
             <td>
                 <button class="btn btn-danger btn-sm" onclick="supprimerDuPanier(${index})">Supprimer</button>
             </td>
+            <td><img src="${plat.image}" alt="${plat.nom}" width="50" height="50"></td> <!-- Affichage de l'image -->
         `;
         tableBody.appendChild(newRow);
     });

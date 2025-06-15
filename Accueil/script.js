@@ -43,11 +43,13 @@ var swiper = new Swiper(".mySwiper", {
     const nom = box.querySelector(".nom-plat").innerText;
     const prix = box.querySelector(".prix-plat").innerText.replace("€", "").trim(); // Enlever l'euro et les espaces
     const cat = box.querySelector(".cat-plat").innerText;
+    const imageSrc = box.querySelector(".boximage").src; // Récupérer l'URL de l'image
 
     const plat = {
         nom: nom,
         prix: prix,
         categorie: cat, // À modifier si besoin
+        image: imageSrc // Ajouter l'image au panier
     };
 
     let panier = JSON.parse(localStorage.getItem("panier")) || [];
