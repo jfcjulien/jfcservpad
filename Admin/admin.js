@@ -67,7 +67,12 @@ function afficherPanier() {
 
     tableBody.innerHTML = ""; // Vider la table avant d'ajouter les plats
 
+    let total = 0;
+
     panier.forEach((plat, index) => {
+        const prixNum = parseFloat(plat.prix) || 0;
+        total += prixNum;
+
         const newRow = document.createElement("tr");
         newRow.innerHTML = `
             <td>${index + 1}</td>
@@ -77,11 +82,21 @@ function afficherPanier() {
             <td>
                 <button class="btn btn-danger btn-sm" onclick="supprimerDuPanier(${index})">Supprimer</button>
             </td>
-            <td><img src="${plat.image}" alt="${plat.nom}" width="50" height="50"></td> <!-- Affichage de l'image -->
+            <td><img src="${plat.image}" alt="${plat.nom}" width="50" height="50"></td>
         `;
         tableBody.appendChild(newRow);
     });
 
+    // Ajout de la ligne du total
+    if (panier.length > 0) {
+        const totalRow = document.createElement("tr");
+        totalRow.innerHTML = `
+            <td colspan="2"></td>
+            <td><strong>Total : ${total.toFixed(2)}€</strong></td>
+            <td colspan="3"></td>
+        `;
+        tableBody.appendChild(totalRow);
+    }
 
     document.getElementById("validation-section").innerHTML = "";
 }
