@@ -102,6 +102,41 @@ function afficherPanier() {
 }
 
 
+// Fonction utilitaire pour générer un reçu PDF
+window.genererRecuPDF = function(commande, customId = "recu") {
+    if (window.jspdf && window.jspdf.jsPDF) {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        doc.setFontSize(16);
+        doc.text(`Reçu de commande - ${customId}`, 10, 15);
+        doc.setFontSize(12);
+        doc.text(`Table : ${commande.table || ""}`, 10, 25);
+        doc.text(`Date : ${commande.date ? new Date(commande.date).toLocaleString() : ""}`, 10, 32);
+
+        let y = 42;
+        doc.text("Plats :", 10, y);
+        y += 8;
+
+        (commande.plats || []).forEach((plat, idx) => {
+            doc.text(
+                `${idx + 1}. ${plat.nom} - ${plat.prix}€ - ${plat.categorie ? plat.categorie : ""}`,
+                12,
+                y
+            );
+            y += 8;
+        });
+
+        const total = (commande.plats || []).reduce((sum, plat) => sum + (parseFloat(plat.prix) || 0), 0);
+        doc.setFontSize(14);
+        doc.text(`Total : ${total.toFixed(2)} €`, 10, y + 5);
+
+        doc.save(`recu-${customId}.pdf`);
+    } else {
+        alert("jsPDF n'est pas chargé !");
+    }
+};
+
 // Supprimer un élément du panier
 function supprimerDuPanier(index) {
     let panier = JSON.parse(localStorage.getItem("panier")) || [];
