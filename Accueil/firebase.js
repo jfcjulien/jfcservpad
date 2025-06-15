@@ -103,3 +103,48 @@ window.validerCommandeEtEnvoyer = async function () {
     alert("Erreur lors de l'envoi de la commande : " + e.message);
   }
 };
+
+
+window.envoyerCommentaire = async function(event) {
+  event.preventDefault(); // Empêche le rechargement du formulaire
+
+  const form = event.target;
+
+  const nom = form.nom.value.trim();
+  const telephone = form.telephone.value.trim();
+  const commande = form.commande.value.trim();
+  const cadeaux = form.cadeaux.value.trim();
+  const noteDuService = parseInt(form.noteDuService.value);
+  const adresse = form.adresse.value.trim();
+  const message = form.message.value.trim();
+
+  if (!nom || !telephone || !commande) {
+    alert("Merci de remplir les champs requis.");
+    return;
+  }
+
+  // Générer un ID personnalisé (ex: Jean_4F2A)
+  const shortID = Math.random().toString(36).substring(2, 6).toUpperCase();
+  const docID = `${nom.replace(/\s+/g, "_")}_${shortID}`;
+
+  const data = {
+    nom,
+    telephone,
+    commande,
+    cadeaux,
+    noteDuService,
+    adresse,
+    message,
+    dateEnvoi: new Date()
+  };
+
+  try {
+    await setDoc(doc(db, "commentaire", docID), data);
+    alert("Commentaire envoyé !");
+    form.reset();
+  } catch (e) {
+    console.error("Erreur Firebase :", e);
+    alert("Erreur lors de l'envoi : " + e.message);
+  }
+};
+
